@@ -38,14 +38,14 @@ filename LIB		"&dir_lib.";
 %include			LIB(Datasets.sas);
 %include			LIB(Macro.sas);
 
-libname pbg			"&dir_pbg."		access=readonly;			                        *Link to Retail data mart;
-libname ccd			"&dir_ccd."		access=readonly;			                        *Link to Credit Card data mart;
-libname aps			"&dir_aps." 	access=readonly;			                        *Link to APS data mart;
-libname crdk		"&dir_card1."	access=readonly; 			                        *Link to CardLink data mart;
-libname siw			"&dir_siw."; 								                                *Common data storage: Basel,IW and parameters;
-libname stg			"&dir_stg.";
-libname fact		"&dir_fact.";
-libname mart		"&dir_mart.";
+libname pbg      "&dir_pbg."		access=readonly;			                        *Link to Retail data mart;
+libname ccd      "&dir_ccd."		access=readonly;			                        *Link to Credit Card data mart;
+libname aps      "&dir_aps." 	access=readonly;			                        *Link to APS data mart;
+libname crdk     "&dir_card1."	access=readonly; 			                        *Link to CardLink data mart;
+libname siw      "&dir_siw."; 								                                *Common data storage: Basel,IW and parameters;
+libname stg      "&dir_stg.";
+libname fact     "&dir_fact.";
+libname mart     "&dir_mart.";
 
 /* ************************************************************************* */
 /* Excel Datevalue vs SAS Datavalue; 										                     */
