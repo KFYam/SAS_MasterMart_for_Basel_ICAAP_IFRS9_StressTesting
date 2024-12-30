@@ -19,7 +19,7 @@ option compress=binary;
 %let dir_pbg		= \\ckwb505\aps-data\Yvonne_V\SAS_Data_V8;				          *specific PBG or retail data marts;
 %let dir_ccd		= \\cf-smesas\creditcard$\HLee\data\portfolio segment; 	    *specific for Credit Card segment;
 %let dir_aps		= \\cf-smesas\creditcard$\new aps\history\backup;		        *specific APS orignal path for getting information about DSR;
-%let dir_card1	= \\cf-smesas\CreditCard$\Cardlink\history\master;		    *Input - Cardlink Performance Data (Current with Daily Snapshot;
+%let dir_card1  = \\cf-smesas\CreditCard$\Cardlink\history\master;		    *Input - Cardlink Performance Data (Current with Daily Snapshot;
 
 %let ind_ICAAP	=;
 
@@ -35,8 +35,8 @@ option compress=binary;
 %let dir_lib		= &dir_pgm.\Code\0.LIBRARY;
 
 filename LIB		"&dir_lib.";
-%include			LIB(Datasets.sas);
-%include			LIB(Macro.sas);
+%include LIB(Datasets.sas);
+%include LIB(Macro.sas);
 
 libname pbg      "&dir_pbg."		access=readonly;			                        *Link to Retail data mart;
 libname ccd      "&dir_ccd."		access=readonly;			                        *Link to Credit Card data mart;
