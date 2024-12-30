@@ -19,13 +19,13 @@ option compress=binary;
 %let dir_pbg		= \\ckwb505\aps-data\Yvonne_V\SAS_Data_V8;				          *specific PBG or retail data marts;
 %let dir_ccd		= \\cf-smesas\creditcard$\HLee\data\portfolio segment; 	    *specific for Credit Card segment;
 %let dir_aps		= \\cf-smesas\creditcard$\new aps\history\backup;		        *specific APS orignal path for getting information about DSR;
-%let dir_card1		= \\cf-smesas\CreditCard$\Cardlink\history\master;		    *Input - Cardlink Performance Data (Current with Daily Snapshot;
+%let dir_card1	= \\cf-smesas\CreditCard$\Cardlink\history\master;		    *Input - Cardlink Performance Data (Current with Daily Snapshot;
 
-%let ind_ICAAP		=;
+%let ind_ICAAP	=;
 
 %let dir_root		= &dir_base.\#SAS.Logic;
 %let dir_xls		= &dir_root.\Data\0.INPUT_XLS;
-%let dir_xlssiw		= &dir_root.\Data\0.INPUT_XLSSIW;
+%let dir_xlssiw	= &dir_root.\Data\0.INPUT_XLSSIW;
 %let dir_siw		= &dir_root.\Data\1.SIW;
 %let dir_stg		= &dir_root.\Data\2.STAGING;				                        *Keep the staging tables for checking purpose, need to be housekeeping and archive from time to time;
 %let dir_fact		= &dir_root.\Data\3.FACT;					                          *Create fact table with time dimension;
